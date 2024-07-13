@@ -1,0 +1,18 @@
+@import "../../styles/mixins";
+@import "/src/styles/breakpoints";
+
+.container {
+  width: 375px;
+  margin: 0 auto;
+  padding: 0 16px;
+
+  @include media-rules(tablet) {
+    padding: 0 32px;
+    max-width: $tablet;
+  }
+
+  @include media-rules(desktop) {
+    padding: 0 100px;
+    max-width: $desktop;
+  }
+}
