@@ -1,11 +1,11 @@
 import { FC } from "react";
-import Form from "../../components/Form/Form";
+import css from "./Login.module.scss";
 import { illustration1x } from "../../assets";
 import { illustration2x } from "../../assets";
-import css from "./Register.module.scss";
+import Form from "../../components/Form/Form";
 import { useLocation } from "react-router-dom";
 
-const Register: FC = () => {
+const Login: FC = () => {
   const location = useLocation();
   const modifyLocation = location.pathname.slice(1);
   return (
@@ -16,9 +16,9 @@ const Register: FC = () => {
         alt="photo girl and boy"
         className={css.img}
       />
-      <Form title="Register" path="/login" />
+      <Form title="Login" path="/register" />
     </div>
   );
 };
 
-export default Register;
+export default Login;

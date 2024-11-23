@@ -4,9 +4,13 @@
 .bg_color {
   background-color: $bg_green;
   width: 100%;
+  padding-top: 32px;
+  border-radius: 25px 25px 0 0;
+  height: 100vh;
+  padding-bottom: 57px;
 }
 
-.form {
+.wrapper_inputs {
   display: flex;
   flex-direction: column;
   gap: 14px;
@@ -17,4 +21,76 @@
   border: 1px solid rgba(18, 20, 23, 0.1);
   border-radius: 15px;
   height: 56px;
+  padding-left: 18px;
+  color: $black;
+}
+
+.input::placeholder {
+  color: $black;
+}
+
+.input:focus {
+  border: 1px solid $main_green;
+  outline: none;
+}
+
+.input_error_border {
+  border: 1px solid $red;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 1.06;
+  letter-spacing: -0.02em;
+  color: $black;
+  margin-bottom: 16px;
+  text-transform: capitalize;
+}
+
+.subtitle {
+  color: rgba(18, 20, 23, 0.8);
+  font-weight: 400;
+  font-family: "FixelDisplay";
+  margin-bottom: 16px;
+}
+
+.error {
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 0.01em;
+  color: $red;
+}
+
+.success_color {
+  color: $main_green;
+}
+
+.error_msg {
+  display: flex;
+  align-items: center;
+  margin-top: 4px;
+  gap: 4px;
+}
+
+.svg_error {
+  fill: $red;
+}
+
+.svg_success {
+  fill: $main_green;
+}
+
+.link {
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: rgba(18, 20, 23, 0.5);
+  text-align: center;
+  margin-top: 16px;
+  display: block;
+}
+
+.link::first-letter {
+  text-transform: capitalize;
 }

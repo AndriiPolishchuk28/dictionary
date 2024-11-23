@@ -3,3 +3,8 @@ export interface IFormInputs {
   email: string;
   password: string;
 }
+
+export interface IProps {
+  path: string;
+  title: string;
+}

@@ -1,0 +1,13 @@
+@import "../../styles/colors";
+
+.btn {
+  border-radius: 30px;
+  background-color: $main_green;
+  height: 56px;
+  width: 100%;
+  font-family: inherit;
+  font-weight: 700;
+  color: $white;
+  margin-top: 32px;
+  text-transform: capitalize;
+}
