@@ -10,6 +10,8 @@ import Container from "../Container/Container";
 import { icons } from "../../assets";
 import clsx from "clsx";
 import { useLocation } from "react-router-dom";
+import { useAppDispatch } from "../../hooks";
+import { signUp } from "../../redux/user/operations";
 
 const schema = Yup.object().shape({
   name: Yup.string()
@@ -32,6 +34,8 @@ const Form: FC<IProps> = ({ path, title }) => {
     email: false,
     password: false,
   });
+  const [showPassword, setShowPassword] = useState(false);
+  const dispatch = useAppDispatch();
 
   const {
     register,
@@ -54,6 +58,7 @@ const Form: FC<IProps> = ({ path, title }) => {
 
   const onSubmit: SubmitHandler<IFormInputs> = (data) => {
     console.log(data);
+    dispatch(signUp(data));
   };
   return (
     <div className={css.bg_color}>
@@ -136,20 +141,38 @@ const Form: FC<IProps> = ({ path, title }) => {
                 )
               )}
             </div>
-            <div>
+            <div className={css.input_wrapper}>
               <label htmlFor="password"></label>
               <input
                 className={clsx(
                   css.input,
                   errors.password && css.input_error_border
                 )}
-                type="text"
+                type={showPassword ? "text" : "password"}
                 {...register("password")}
                 name="password"
                 id="password"
                 placeholder="Password"
                 onBlur={() => handleBlur("password")}
               />
+              <button
+                type="button"
+                onMouseDown={(e) => e.preventDefault()}
+                onClick={(e) => {
+                  e.stopPropagation();
+                  setShowPassword(!showPassword);
+                }}
+              >
+                <svg width={20} height={20} className={css.svg_eye}>
+                  <use
+                    href={
+                      !showPassword
+                        ? `${icons}#icon-eye-off`
+                        : `${icons}#icon-eye`
+                    }
+                  ></use>
+                </svg>
+              </button>
               {errors.password ? (
                 <div className={css.error_msg}>
                   <svg width={16} height={16} className={css.svg_error}>

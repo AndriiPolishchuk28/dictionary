@@ -3,11 +3,8 @@ import Form from "../../components/Form/Form";
 import { illustration1x } from "../../assets";
 import { illustration2x } from "../../assets";
 import css from "./Register.module.scss";
-import { useLocation } from "react-router-dom";
 
 const Register: FC = () => {
-  const location = useLocation();
-  const modifyLocation = location.pathname.slice(1);
   return (
     <div className={css.wrapper}>
       <img
