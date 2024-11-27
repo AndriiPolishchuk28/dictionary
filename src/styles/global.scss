@@ -1,5 +1,11 @@
 @import "reset";
+@import "fonts";
 
 body {
   background-color: #ffffff;
+}
+
+:root {
+  --font-family: "MacPaw Fixel Display", sans-serif;
+  --second-family: "SF Pro Display", sans-serif;
 }
