@@ -4,7 +4,7 @@
     "baseUrl": "./",
     "paths": {
       "src/*": ["src/*"],
-      "assets/*": ["src/assets/*"], // Переконайтесь, що alias для assets збігається
+      "assets/*": ["src/assets/*"],
       "components/*": ["src/components/*"],
       "pages/*": ["src/pages/*"]
     }

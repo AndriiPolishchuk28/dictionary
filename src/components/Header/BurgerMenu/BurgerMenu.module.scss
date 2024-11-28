@@ -1,0 +1,76 @@
+@import "../../../styles/colors";
+
+.svg_navbar {
+  stroke: $black;
+}
+
+.nav_wrapper {
+  display: flex;
+  align-items: center;
+  padding: 16px 16px 0;
+  justify-content: space-between;
+}
+
+.user_wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.text_name {
+  font-family: "MacPaw Fixel Display";
+  font-weight: 500;
+  font-size: 16px;
+  color: $white;
+}
+
+.icon_wrapper {
+  background-color: $white;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.svg_icon {
+  fill: $main_green;
+}
+
+.close_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.list {
+  margin-top: 166px;
+  padding-left: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.link {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 14px;
+  color: $white;
+}
+
+.btn_logout {
+  display: flex;
+  align-items: center;
+  color: $white;
+  font-weight: 500;
+  font-size: 14px;
+  font-family: inherit;
+  gap: 8px;
+}

@@ -5,9 +5,6 @@ import scss from "./Header.module.scss";
 import BurgerMenu from "./BurgerMenu/BurgerMenu";
 
 const Header: FC = () => {
-  const toggleDrawer = (newOpen: boolean) => () => {
-    setOpen(newOpen);
-  };
   return (
     <header className={scss.header}>
       <div className={scss.nav_wrapper}>

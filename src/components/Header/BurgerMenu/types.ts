@@ -1,6 +1,7 @@
 interface IMenuItem {
   label: string;
   link: string;
+  icon?: string;
 }
 
 export const menu: IMenuItem[] = [
@@ -15,9 +16,5 @@ export const menu: IMenuItem[] = [
   {
     label: "Training",
     link: "/training",
-  },
-  {
-    label: "Log out",
-    link: "/login",
   },
 ];

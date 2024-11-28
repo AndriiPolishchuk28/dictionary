@@ -22,5 +22,13 @@
 <path stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.9091" d="M8.537 24.727h36.553"></path>
 <path stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.9091" d="M19.668 15.030h25.423"></path>
 </symbol>
+<symbol id="icon-close" viewBox="0 0 32 32">
+<path fill="none" stroke="#fcfcfc" style="stroke: var(--color1, #fcfcfc)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="3" d="M24 8l-16 16"></path>
+<path fill="none" stroke="#fcfcfc" style="stroke: var(--color1, #fcfcfc)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="3" d="M8 8l16 16"></path>
+</symbol>
+<symbol id="icon-arrow-right" viewBox="0 0 30 32">
+<path fill="none" stroke="#fcfcfc" style="stroke: var(--color1, #fcfcfc)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.8235" d="M1.757 16h24.094"></path>
+<path fill="none" stroke="#fcfcfc" style="stroke: var(--color1, #fcfcfc)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.8235" d="M18.070 7.216l8.784 8.784-8.784 8.784"></path>
+</symbol>
 </defs>
 </svg>
